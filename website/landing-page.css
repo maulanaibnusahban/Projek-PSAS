@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  z-index: 999;
+}
+
+.logout button {
+  padding: 3px 15px;
+  border-radius: 3px;
+  background-color: #fe9d21;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.cover {
+  height: 450px;
+}
+
+.bg {
+  display: flex;
+  justify-items: center;
+  position: absolute;
+  width: 100%;
+  filter: blur(2px);
+  height: 450px;
+  background-size: cover;
+  z-index: -99;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a1132e;
+}
+
+.container-2 {
+  width: 100%;
+  margin-top: -2px;
+  padding-top: 50px;
+  height: fit-content;
+  background-color: #e2e2e2;
+}
+
+.judul h2.head {
+  font-family: "Vina Sans", sans-serif;
+  font-size: 65px;
+  color: #a1132e;
+}
+
+.judul h2.head span {
+  color: #fe9d21;
+}
+
+.container-2 h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  padding: 80px 20px 100px 20px;
+  justify-content: space-around;
+  width: 100%;
+  height: fit-content;
+}
+
+.card-content .card {
+  border: none;
+  width: 320px;
+  height: fit-content;
+  padding: 10px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 7px #b8b8b8, -5px -5px 7px #ffffff;
+}
+
+.card img {
+  border-radius: 2px;
+}
+
+.card p {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.card button {
+  margin-top: 13px;
+  border: none;
+  padding: 5px;
+  background-color: #a1132e;
+  color: wheat;
+  border-radius: 2px;
+}
+
+.card-content a {
+  list-style: none;
+  text-decoration: none;
+}
+
+button:active {
+  transform: translateY(0.8px);
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #474747;
+  user-select: red;
+}
+
+.profil {
+  display: flex;
+  flex: 1;
+}
+
+.fot-1 {
+  font-size: 13px;
+  color: rgb(228, 228, 228);
+  padding: 60px;
+}
+
+.fot-2 {
+  flex: 0.7;
+  padding: 50px;
+  color: #f3efef;
+}
+
+.kontak {
+  margin-top: 20px;
+}
+
+.kontak svg {
+  margin-right: 10px;
+}
+
+.image {
+  margin-top: 30px;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.image svg {
+  height: 20px;
+}
+
+footer.copy {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  color: #f3efef;
+  background-color: #000000;
+}
+
+.fot-1-2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  /* background-color: #0077b3; */
+}
+
+@media screen and (max-width: 430px) {
+  .fot-2 {
+    padding-top: 0;
+  }
+}

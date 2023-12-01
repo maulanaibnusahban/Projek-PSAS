@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  z-index: 999;
+}
+
+.logout button {
+  padding: 3px 15px;
+  border-radius: 3px;
+  background-color: #fe9d21;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 0 150px 0 150px;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -99;
+  filter: blur(2px);
+}
+
+.kotak {
+  width: 850px;
+  height: fit-content;
+  border-radius: 5px;
+  margin-top: 95px;
+  padding-bottom: 20px;
+  background-color: #fe9d21;
+  position: relative;
+  overflow: hidden;
+}
+
+.judul h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.sosmed {
+  flex: 0.7;
+  display: flex;
+  padding: 30px 40px;
+  flex-direction: column;
+}
+
+.judul-1 h2 {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+svg {
+  height: 30px;
+  margin-right: 15px;
+}
+
+.svg {
+  margin-top: 10px;
+  font-size: 17px;
+  color: black;
+}
+
+.input-box {
+  flex: 1;
+  padding-left: 120px;
+  padding-top: 30px;
+}
+
+.input-box h2 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form .input-box input {
+  margin-bottom: 16px;
+  background-color: #ffffdd;
+  font-family: "Poppins", sans-serif;
+  padding-left: 15px;
+  outline: none;
+  font-size: 14px !important;
+  border: none;
+  width: 85%;
+  border-radius: 3px;
+  height: 33px;
+}
+
+form .input-box .input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form .input-box .massage {
+  height: 110px;
+  outline: none;
+  resize: none;
+  width: 85%;
+  border: none;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffdd;
+  padding: 15px;
+  font-size: 14px !important;
+  margin-bottom: 10px;
+}
+
+form .input-box button.sub {
+  background-color: #ffffdd;
+  border-radius: 4px;
+  border: none;
+  color: #565656;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 30px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 840px) {
+  .form {
+    flex-direction: column;
+  }
+  .input-box {
+    padding: 30px 50px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  main {
+    padding: 0 10px 0 10px;
+  }
+  .input {
+    width: 100%;
+  }
+}
